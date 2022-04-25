@@ -1,12 +1,131 @@
-h1
-{
-    color: blue;
-    font-size: 24px;
-}       
+/* Document
+   ========================================================================== */
 
-/*Selectores de clase*/
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
 
-.advertencia{
-    color: white;
-    background-color: red;
+ * {
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
 }
+
+html {
+    background-color: #693a3a;
+    color: #f6f7e9;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial;
+}
+
+/* Sections
+     ========================================================================== */
+
+/**
+   * Remove the margin in all browsers.
+   */
+
+.container {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+    grid-template-areas:"header header header"
+                        "aside content content"
+                        "footer footer footer"
+}
+
+.container header{
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+	grid-area: header;
+}
+
+.container header img{
+    max-width: 70px;
+}
+
+
+
+
+
+
+.container .content, 
+.container .aside{
+	color: #000;
+    padding: 1em;
+	border-radius: .5em;
+}   
+
+.container .aside{
+    margin-left: 3em;
+    background: #BF8B67;
+    grid-area: aside;
+}
+
+.container .content{
+    margin-right: 3em;
+    background:#DACC96;
+	grid-area: content;
+}
+
+.container .footer{
+    grid-area: footer;
+}
+
+.container .footer,
+.container .header {
+	background:  #632626;
+	padding: .3em;
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*================================== ===============================*/
+
+.footer {
+    display: flex;
+	flex-wrap:wrap;
+	justify-content:space-between;
+}
+
+.footer .links {
+	display:flex;
+	flex-wrap:wrap;
+}
+
+.footer .links a {
+	flex-grow:1;
+	color:#fff;
+	padding: .5em;
+	text-align: center;
+    
+    text-decoration:none;
+}
+
+.footer img{
+    max-width: 45px;
+}
+
+.footer h4{
+    align-items: center;
+    display: flex;
+    flex-wrap:wrap;
+	justify-content:flex-end;
+}
+
+
+
