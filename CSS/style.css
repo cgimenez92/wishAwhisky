@@ -22,10 +22,11 @@ footer {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas:
     "header header header header"
     "navbar navbar navbar navbar"
+    "submenu submenu submenu submenu"
     "aside content content content"
     "footer footer footer footer";
 }
@@ -36,7 +37,7 @@ footer {
 }
 
 .container header img {
-  max-width: 400px;
+  max-width: 450px;
   margin: 0.5em;
 }
 
@@ -50,8 +51,11 @@ footer {
 
 .navbar li {
   padding-bottom: 0.5em;
-  border-radius: 0.5em;
   position: relative;
+  grid-area: submenu;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
 .navbar li a {
@@ -67,8 +71,8 @@ footer {
   border-bottom: 2px solid #dacc96;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-  /* Hidden by default */
 
+  /* Hidden by default*/
   display: none;
 
   /* Absolute position */
@@ -77,9 +81,9 @@ footer {
 
   /* Reset styles */
   list-style-type: none;
-  /* Width */
 
-  width: 170px;
+  /* Width */
+  width: 9.5em;
 }
 
 /* The second level sub navbar */
@@ -88,15 +92,17 @@ footer {
   position: absolute;
   top: 0;
 }
+
 li a:hover {
   color: #000;
   border-bottom: 2px solid #bf8b67;
 }
 
-/* Show the direct sub navbar when hovering the list item */
+/* Show the direct sub navbar when hovering the list item*/
 .navbar li:hover > ul {
   display: flex;
   flex-direction: column;
+  
 }
 
 .container .content,
