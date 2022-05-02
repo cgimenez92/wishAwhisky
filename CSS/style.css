@@ -5,11 +5,11 @@
 }
 
 html {
-  background-color:  #F9F0F0;   /*#702B2B #B05454*/;
-  color: #0E0606;
+  background-color: #f9f0f0; /*#702B2B #B05454*/
+  color: #0e0606;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
-  letter-spacing: .05em;
-  word-spacing: .2em;
+  letter-spacing: 0.05em;
+  word-spacing: 0.2em;
 }
 
 h1,
@@ -21,9 +21,9 @@ footer {
     Arial;
 }
 
-h1{
-    text-align: center;
-    margin-bottom: 1em;
+h1 {
+  text-align: center;
+  margin-bottom: 1em;
 }
 
 .container {
@@ -47,18 +47,17 @@ h1{
   margin: 0.5em;
 }
 
-.fixed-header{
-    position: fixed;
-    width: 100%;
+.fixed-header {
+  position: fixed;
+  width: 100%;
 }
 
 /****************NAVBAR********************/
 .navbar {
-    
-    list-style-type: none;
-    grid-area: navbar;
-    display: flex;
-    justify-content: space-around;
+  list-style-type: none;
+  grid-area: navbar;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navbar li {
@@ -76,7 +75,7 @@ h1{
 }
 
 .navbar ul {
-  background-color: #0E0606;
+  background-color: #0e0606;
   border-bottom: 2px solid #dacc96;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
@@ -101,7 +100,6 @@ li a:hover {
 .navbar li:hover > ul {
   display: flex;
   flex-direction: column;
-  
 }
 /****************NAVBAR********************/
 /*
@@ -120,8 +118,15 @@ li a:hover {
 }*/
 
 .container .content {
-  margin: 9em 3em 3em 3em;
+  margin: 9em 15em 3em 15em;
   grid-area: content;
+}
+
+.first-letter::first-letter {
+  font-size: 35px;
+  line-height: 35px;
+  font-family: "Love Ya Like A Sister", "Roboto", "Helvetica Neue", Helvetica,
+    Arial;
 }
 
 .container .footer {
@@ -131,8 +136,48 @@ li a:hover {
 .container .footer,
 .container .header,
 .container .navbar {
-  background: #0E0606;
-  color: #F9F0F0;
+  background: #0e0606;
+  color: #f9f0f0;
+}
+
+#who-we-are{
+    padding-bottom:.5em;
+}
+
+.questions{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#first-question,
+#second-question,
+#third-question,
+#fourth-question
+ {
+    text-align: center;
+    margin: 0 2em 2em 2em;
+    width: 100%;
+}
+
+#first-question > h2,
+#second-question > h2,
+#third-question > h2,
+#fourth-question > h2 {
+
+    padding: .5em;
+}
+
+#fifth-question{
+    text-align: center;
+    width: 100%;
+}
+
+.questions article img {
+  border: 3px solid #d5aa84;
+  border-radius: 0.5em;
+  margin-top: 1em;
+  max-width: 400px;
 }
 
 .footer {
@@ -147,7 +192,7 @@ li a:hover {
 }
 
 .footer .links a {
-  color: #F9F0F0;
+  color: #f9f0f0;
   padding: 0.5em;
   text-decoration: none;
 }
