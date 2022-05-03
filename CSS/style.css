@@ -110,6 +110,9 @@ li a:hover {
   width: 100%;
   margin-top: 7.7em;
   overflow: hidden;
+  border-bottom-left-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+  background-color: #0e0606;
 }
 
 .slide ul {
@@ -124,8 +127,11 @@ li a:hover {
 }
 
 .slide img {
-    width: 100%;
-    height: 35em;
+    width: 60%; /* Ver de dejar el width en 100% y cambiar con @mediaquery a lo actual  */
+    height: 45em;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 0.5em;
 }
 
 @keyframes change {
@@ -144,6 +150,9 @@ li a:hover {
     85%{margin-left:-400%;}
     100%{margin-left:-400%;}
 }
+
+
+/****************CAROUSEL******************/
 /*
 .container .content
 .container .aside{
@@ -243,22 +252,24 @@ li a:hover {
 }
 
 .footer .social a {
-  margin-right: 0.6em;
+  margin-right: 1em;
 }
 
 .footer img {
   max-width: 45px;
 }
 
-/*
-@media only screen and  (max-width: 600px){
-    
-    .footer {
-        display: flex;
-        justify-content: space-between;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-    }
 
-}*/
+@media screen and  (max-width: 1280px){
+
+    .slide {
+        background-color: #f9f0f0;
+      }
+    
+    .slide img {
+        width: 100%; /* Ver de dejar el width en 100% y cambiar con @mediaquery a lo actual  */
+        margin-right: 0%;
+        margin-left: 0%;
+        border-radius: 0;
+    }
+}
