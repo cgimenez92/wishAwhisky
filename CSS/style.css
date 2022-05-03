@@ -5,7 +5,7 @@
 }
 
 html {
-  background-color: #f9f0f0; /*#702B2B #B05454*/
+  background-color: #f9f0f0;
   color: #0e0606;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
   letter-spacing: 0.05em;
@@ -29,10 +29,11 @@ h1 {
 .container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(4, auto);
+  grid-template-rows: repeat(5, auto);
   grid-template-areas:
     "header header header header"
     "navbar navbar navbar navbar"
+    "slide slide slide slide"
     "content content content content"
     "footer footer footer footer";
 }
@@ -102,6 +103,47 @@ li a:hover {
   flex-direction: column;
 }
 /****************NAVBAR********************/
+
+/****************CAROUSEL******************/
+ .slide {
+  grid-area: slide;
+  width: 100%;
+  margin-top: 7.7em;
+  overflow: hidden;
+}
+
+.slide ul {
+  padding: 0;
+  display: flex;
+  width: 500%;
+  animation: change 20s infinite alternate;
+}
+.slide li {
+  width: 100%;
+  list-style: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 35em;
+}
+
+@keyframes change {
+    0%{margin-left:0;}
+    15%{margin-left:0;}
+
+    20%{margin-left:-100%;}
+    40%{margin-left:-100%;}
+
+    45%{margin-left:-200%;}
+    60%{margin-left:-200%;}
+
+    65%{margin-left:-300%;}
+    80%{margin-left:-300%;}
+
+    85%{margin-left:-400%;}
+    100%{margin-left:-400%;}
+}
 /*
 .container .content
 .container .aside{
@@ -118,7 +160,7 @@ li a:hover {
 }*/
 
 .container .content {
-  margin: 9em 15em 3em 15em;
+  margin: 4.1em 15em 3em 15em;
   grid-area: content;
 }
 
@@ -140,41 +182,39 @@ li a:hover {
   color: #f9f0f0;
 }
 
-#who-we-are{
-    padding-bottom:.5em;
+#who-we-are {
+  padding-bottom: 0.5em;
 }
 
-.questions{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+.questions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 #first-question,
 #second-question,
 #third-question,
-#fourth-question
- {
-    text-align: center;
-    margin: 0 2em 2em 2em;
-    width: 100%;
+#fourth-question {
+  text-align: center;
+  margin: 0 2em 2em 2em;
+  width: 100%;
 }
 
 #first-question > h2,
 #second-question > h2,
 #third-question > h2,
 #fourth-question > h2 {
-
-    padding: .5em;
+  padding: 0.5em;
 }
 
-#fifth-question{
-    text-align: center;
-    width: 100%;
+#fifth-question {
+  text-align: center;
+  width: 100%;
 }
 
 .questions article img {
-  border: 3px solid #d5aa84;
+  border: 3px solid #b05454;
   border-radius: 0.5em;
   margin-top: 1em;
   max-width: 400px;
