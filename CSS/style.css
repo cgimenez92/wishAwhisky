@@ -275,15 +275,46 @@ li a:hover {
   max-width: 45px;
 }
 
-@media screen and (min-width: 384px) {
+@media screen and (min-width: 384px) and (max-width: 768px) {
+
+  .navbar {
+    list-style-type: none;
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide {
+    margin-top: 12.7em;
+  }
+
   .container .content {
     margin: 5%;
   }
-
   
 }
+/*
+@media screen and (min-width: 768px) and (max-width: 1100px) {
+
+  .navbar {
+    list-style-type: none;
+    grid-area: navbar;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slide {
+    margin-top: 12.7em;
+  }
+
+  .container .content {
+    margin: 5%;
+  }
+  
+}*/
 
 @media screen and (min-width: 1100px) {
+
   .slide {
     background-color: #0e0606;
   }
@@ -295,4 +326,5 @@ li a:hover {
     margin-left: 20%;
     border-radius: 0.5em;
   }
+
 }
