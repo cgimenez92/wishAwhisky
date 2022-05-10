@@ -13,10 +13,6 @@ li a:active {
   display: none;
 }
 
-.slide {
-  margin-top: 12.7em;
-}
-
 .footer {
   display: flex;
   flex-direction: column;
