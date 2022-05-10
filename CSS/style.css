@@ -1,3 +1,7 @@
+@import url("./mobile.css") screen and (min-width: 384px) and (max-width: 768px);
+/* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
+/* @import url("./bigScreen.css") only screen and (min-width: 384px) and (max-width: 768px); Verificar pantallas grandes*/
+
 * {
   margin: 0;
   padding: 0;
@@ -185,7 +189,7 @@ li a:hover {
 }*/
 
 .container .content {
-  margin: 4.1em 15em 3em 15em;
+  margin: 25px;
   grid-area: content;
 }
 
@@ -273,95 +277,4 @@ li a:hover {
 
 .footer img {
   max-width: 3em;
-}
-
-
-
-
-
-
-
-@media only screen and (min-width: 384px) and (max-width: 768px) {
-
-  .navbar {
-    list-style-type: none;
-    grid-area: navbar;
-    display: flex;
-    flex-direction: column;
-  }
-
-  li a:active {
-    color: #000;
-  }
-
-  .navbar li:hover > ul {
-    display: none;
-  }
-
-  .slide {
-    margin-top: 12.7em;
-  }
-
-  .container .content {
-    margin: 5%;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer .social a {
-    margin: 0 1.5em 0 1.5em; 
-  }
-
-  .footer .links,
-  .footer .social {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footer .links a:hover {
-    border-bottom: none;
-  }
-
-  .footer .links a:active {
-    color: #000000;
-  }
-  
-}
-/*
-@media screen and (min-width: 768px) and (max-width: 1100px) {
-
-  .navbar {
-    list-style-type: none;
-    grid-area: navbar;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .slide {
-    margin-top: 12.7em;
-  }
-
-  .container .content {
-    margin: 5%;
-  }
-  
-}*/
-
-@media screen and (min-width: 1100px) {
-
-  .slide {
-    background-color: #0e0606;
-  }
-
-  .slide img {
-    width: 60%; /* Ver de dejar el width en 100% y cambiar con @mediaquery a lo actual  */
-    height: 45em;
-    margin-right: 20%;
-    margin-left: 20%;
-    border-radius: 0.5em;
-  }
-
 }

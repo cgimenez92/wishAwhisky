@@ -1,0 +1,41 @@
+.navbar {
+  list-style-type: none;
+  grid-area: navbar;
+  display: flex;
+  flex-direction: column;
+}
+
+li a:active {
+  color: #000;
+}
+
+.navbar li:hover > ul {
+  display: none;
+}
+
+.slide {
+  margin-top: 12.7em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .social a {
+  margin: 0 1.5em 0 1.5em;
+}
+
+.footer .links,
+.footer .social {
+  align-items: center;
+  justify-content: center;
+}
+
+.footer .links a:hover {
+  border-bottom: none;
+}
+
+.footer .links a:active {
+  color: #000000;
+}
