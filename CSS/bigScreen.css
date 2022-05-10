@@ -1,0 +1,11 @@
+.slide {
+    background-color: #0e0606;
+  }
+
+  .slide img {
+    width: 60%; /* Ver de dejar el width en 100% y cambiar con @mediaquery a lo actual  */
+    height: 45em;
+    margin-right: 20%;
+    margin-left: 20%;
+    border-radius: 0.5em;
+  }
