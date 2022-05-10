@@ -1,3 +1,14 @@
+.container .content  {
+  margin: 0 !important;
+}
+
+#first-question,
+#second-question,
+#third-question,
+#fourth-question {
+  margin: 0 !important;
+}
+
 .navbar {
   list-style-type: none;
   grid-area: navbar;

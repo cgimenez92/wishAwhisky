@@ -1,6 +1,6 @@
-@import url("./mobile.css") screen and (min-width: 384px) and (max-width: 768px);
+@import url("./mobile.css") screen and (min-width: 250px) and (max-width: 768px);
 /* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
-@import url("./bigScreen.css") only screen and (min-width: 384px) and (max-width: 768px);
+/* @import url("./bigScreen.css") screen and (min-width: 1250px);*/
 
 * {
   margin: 0;
@@ -30,37 +30,35 @@ h1 {
   margin-bottom: 1em;
 }
 
-.container {
+div.container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, auto);
+  grid-template-rows: repeat(4, auto);
   grid-template-areas:
-    "header header header header"
-    "navbar navbar navbar navbar"
+    "fixed-header fixed-header fixed-header fixed-header"
     "slide slide slide slide"
     "content content content content"
     "footer footer footer footer";
 }
 
-.container header {
+.container .fixed-header {
+  position: fixed;
+  grid-area: fixed-header;
+  width: 100%;
+}
+
+.container header.header {
   text-align: center;
-  grid-area: header;
 }
 
 .container header img {
-  max-width: 30em;
+  max-width: 20em;
   margin: 0.5em;
-}
-
-.fixed-header {
-  position: fixed;
-  width: 100%;
 }
 
 /****************NAVBAR********************/
 .navbar {
   list-style-type: none;
-  grid-area: navbar;
   display: flex;
   justify-content: space-around;
 }
@@ -68,7 +66,6 @@ h1 {
 .navbar li {
   padding-bottom: 0.5em;
   position: relative;
-  grid-area: submenu;
   display: flex;
   justify-content: space-around;
   text-align: center;
@@ -112,7 +109,7 @@ li a:hover {
 .slide {
   grid-area: slide;
   width: 100%;
-  margin-top: 7.7em;
+  margin-top: 6em;
   overflow: hidden;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
