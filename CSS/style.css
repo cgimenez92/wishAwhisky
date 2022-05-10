@@ -1,6 +1,6 @@
 @import url("./mobile.css") screen and (min-width: 384px) and (max-width: 768px);
 /* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
-/* @import url("./bigScreen.css") only screen and (min-width: 384px) and (max-width: 768px); Verificar pantallas grandes*/
+@import url("./bigScreen.css") only screen and (min-width: 384px) and (max-width: 768px);
 
 * {
   margin: 0;
@@ -81,7 +81,7 @@ h1 {
 
 .navbar ul {
   background-color: #0e0606;
-  border-bottom: 2px solid #dacc96;
+  border-bottom: .1em solid #dacc96;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   display: none;
@@ -99,7 +99,7 @@ h1 {
 
 li a:hover {
   /*color: #000;*/
-  border-bottom: 2px solid #bf8b67;
+  border-bottom: .1em solid #bf8b67;
 }
 
 .navbar li:hover > ul {
@@ -243,10 +243,10 @@ li a:hover {
 }
 
 .questions article img {
-  border: 3px solid #b05454;
+  border: .2em solid #b05454;
   border-radius: 0.5em;
   margin-top: 1em;
-  max-width: 400px;
+  max-width: 25em;
 }
 
 .footer {
@@ -268,7 +268,7 @@ li a:hover {
 
 .footer .links a:hover {
   /*color: #000;*/
-  border-bottom: 2px solid #bf8b67;
+  border-bottom: .1em solid #bf8b67;
 }
 
 .footer .social a {
