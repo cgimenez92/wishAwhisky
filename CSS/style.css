@@ -1,6 +1,6 @@
 @import url("./mobile.css") screen and (min-width: 250px) and (max-width: 768px);
 /* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
-/* @import url("./bigScreen.css") screen and (min-width: 1250px);*/
+@import url("./bigScreen.css") screen and (min-width: 1250px);
 
 * {
   margin: 0;
@@ -42,9 +42,10 @@ div.container {
 }
 
 .container .fixed-header {
-  position: fixed;
+  position: sticky;
   grid-area: fixed-header;
   width: 100%;
+  top: 0;
 }
 
 .container header.header {
@@ -109,7 +110,6 @@ li a:hover {
 .slide {
   grid-area: slide;
   width: 100%;
-  margin-top: 6em;
   overflow: hidden;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
@@ -246,6 +246,7 @@ li a:hover {
   max-width: 25em;
 }
 
+
 .footer {
   display: flex;
   justify-content: space-between;
@@ -264,7 +265,6 @@ li a:hover {
 }
 
 .footer .links a:hover {
-  /*color: #000;*/
   border-bottom: .1em solid #bf8b67;
 }
 
