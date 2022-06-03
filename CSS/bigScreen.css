@@ -1,7 +1,5 @@
 .slide {
     background-color: #0e0606 !important;
-    
-    
   }
 
   .slide img {
@@ -12,4 +10,15 @@
     margin-left: 20% !important;
     border: .1em solid #bf8b67;
     border-radius: 0.5em;
+  }
+
+
+  #who-we-are p{
+    padding-right: 40em !important; 
+    padding-left: 40em !important; 
+  }
+  
+
+  .questions article img{
+    max-width: 650px !important;
   }

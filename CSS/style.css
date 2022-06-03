@@ -2,6 +2,24 @@
 /* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
 @import url("./bigScreen.css") screen and (min-width: 1250px);
 
+
+/* // Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+ */
+
+
 * {
   margin: 0;
   padding: 0;
@@ -12,8 +30,9 @@ html {
   background-color: #f9f0f0;
   color: #0e0606;
   font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.01em;
   word-spacing: 0.2em;
+  line-height: 1.45em;
 }
 
 h1,
@@ -111,8 +130,6 @@ li a:hover {
   grid-area: slide;
   width: 100%;
   overflow: hidden;
-  border-bottom-left-radius: 0.5em;
-  border-bottom-right-radius: 0.5em;
   background-color: #f9f0f0;
 }
 
@@ -185,8 +202,24 @@ li a:hover {
   grid-area: aside;
 }*/
 
+#who-we-are {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  background-color: #521A0B;
+  text-align: center;
+  color: #f9f0f0;
+}
+
+#who-we-are p{
+  padding-right: 11em;
+  padding-left: 11em;
+}
+
+#who-we-are h2{
+      color: #EDCE98;
+}
+
 .container .content {
-  margin: 25px;
   grid-area: content;
 }
 
@@ -208,44 +241,149 @@ li a:hover {
   color: #f9f0f0;
 }
 
-#who-we-are {
-  padding-bottom: 0.5em;
-}
-
-.questions {
+/* .questions {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+} */
+
+#first-question,
+#second-question,
+#third-question,
+#fourth-question,
+#find-us  {
+  text-align: center;
+  width: 100%;
+}
+
+#first-question .question_answer,
+#second-question .question_answer,
+#third-question  .question_answer,
+#fourth-question .question_answer{
+  margin: 1.5em 7em 1.5em 7em;
+  width: 50%;
+} 
+
+#first-question .whisky_img,
+#second-question .whisky_img,
+#third-question  .whisky_img,
+#fourth-question .whisky_img{
+  float: left;
+} 
+
+#find-us .question_answer {
+  margin: 2em 3em 2em 3em;
+}
+
+#find-us {
+  background-color: #EDCE98;
+  text-align: center;
+}
+
+#third-question,
+#fourth-question{
+  background-color: #521A0B;
+  text-align: center;
+  color: #f9f0f0;
 }
 
 #first-question,
 #second-question,
 #third-question,
-#fourth-question {
-  text-align: center;
-  margin: 0 2em 2em 2em;
-  width: 100%;
-}
-
-#first-question > h2,
-#second-question > h2,
-#third-question > h2,
-#fourth-question > h2 {
-  padding: 0.5em;
-}
-
-#fifth-question {
-  text-align: center;
-  width: 100%;
-}
+#fourth-question,
+#find-us {
+  display: flex;
+  justify-content: space-between;
+} 
 
 .questions article img {
-  border: .2em solid #b05454;
-  border-radius: 0.5em;
-  margin-top: 1em;
   max-width: 25em;
 }
 
+
+ /* Style the form */
+ #regForm {
+  margin: 4rem auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+/* Style the input fields */
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  border: .1em solid #0e0606;
+  border-radius: 0.5em;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #FFE8ED;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+}
+
+.tab p{
+  margin: 1em;
+}
+
+.tab h2{
+  text-align:center;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #EDCE98;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #521A0B;
+} 
+
+button[type=button]{
+  background-color: #521A0B;
+  border-radius: 0.5em;
+  border: none;
+  color: #f9f0f0;
+  padding: 1em 2em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.slide-buttons{
+  margin: 1em;
+}
+
+.slide-buttons #prevBtn{
+  float: left;
+}
+
+.slide-buttons #nextBtn{
+  float: right;
+}
+
+.slide-step{
+  text-align:center;
+  margin-top: 4em;
+}
 
 .footer {
   display: flex;

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Wish a Whisky</title>
-    <link rel="icon" href="./img/logo_2.png">
+    <link rel="icon" href="../img/logo_2.png">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,7 +26,7 @@
       <div class="fixed-header">
         <header class="header">
           <!-- <img src="./img/logo_2.png" alt="logo" /> -->
-          <img src="./img/logo_transparent.png" alt="logo_transparent" />
+          <img src="../img/logo_transparent.png" alt="logo_transparent" />
           <!-- <img src="./img/logo_2.png" alt="logo" /> -->
         </header>
 
@@ -87,44 +87,104 @@
           </li>
         </ul>
       </div>
-    <div class="slide">
-      <ul>
-          <li><img src="./img/cave.jpg" alt="cave"/></li>
-          <li><img src="./img/glenfiddich.jpg" alt="ballentines"/></li>
-          <li><img src="./img/chivas.jpeg" alt="chivas"/></li>
-          <li><img src="./img/johnie_walker_wallpaper.jpg" alt="johnnie"/></li>
-          <li><img src="./img/jack_daniels.jpg" alt="jack_daniels"/></li>
-      </ul>
-    </div>
+      
+      <form>
+        <div class="form-row">
+          <div class="col-md-4 mb-3">
+            <label for="validationServer01">First name</label>
+            <input type="text" class="form-control is-valid" id="validationServer01" placeholder="First name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
 
-      <main class="content">
-       
-        
-      </main>
+          <div class="col-md-4 mb-3">
+            <label for="validationServer02">Last name</label>
+            <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Last name" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-3">
+            <label for="validationServerUsername">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroupPrepend3">@</span>
+              </div>
+              <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+              <div class="invalid-feedback">
+                Please choose a username.
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="validationServer03">City</label>
+            <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="City" required>
+            <div class="invalid-feedback">
+              Please provide a valid city.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationServer04">State</label>
+            <input type="text" class="form-control is-invalid" id="validationServer04" placeholder="State" required>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="validationServer05">Zip</label>
+            <input type="text" class="form-control is-invalid" id="validationServer05" placeholder="Zip" required>
+            <div class="invalid-feedback">
+              Please provide a valid zip.
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+            <label class="form-check-label" for="invalidCheck3">
+              Agree to terms and conditions
+            </label>
+            <div class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </form>
+
 
       <footer class="footer">
         <section class="links">
-          <a href="./index.html"
-            ><img src="./img/whiskey-glass.png" alt="Menu"
+          <a href="../index.html"
+            ><img src="../img/whiskey-glass.png" alt="Menu"
           /></a>
           <!-- <a href="#">Acerca de</a>-"./aboutUs.html"
           <a href="#">Contacto</a>"./contact.html" -->
-          <a href="./findUs.html">Donde encontrarnos</a>
-          <a href="./register.html">Registrese</a>
+          <a href="../findUs.html">Donde encontrarnos</a>
+          <a href="../register.html">Registrese</a>
         </section>
 
         <section class="social">
           <a href="https://www.facebook.com/"
-            ><img src="./img/facebook.png" alt="facebook"
+            ><img src="../img/facebook.png" alt="facebook"
           /></a>
           <a href="https://www.instagram.com/"
-            ><img src="./img/instagram.png" alt="instagram"
+            ><img src="../img/instagram.png" alt="instagram"
           /></a>
           <a href="https://twitter.com/"
-            ><img src="./img/twitter.png" alt="twitter"
+            ><img src="../img/twitter.png" alt="twitter"
           /></a>
           <a href="https://www.youtube.com/"
-            ><img src="./img/youTube.png" alt="youtube"
+            ><img src="../img/youtube.png" alt="youtube"
           /></a>
         </section>
       </footer>
