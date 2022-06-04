@@ -200,7 +200,8 @@ li a:hover {
   grid-area: aside;
 }*/
 
-#who-we-are {
+#who-we-are
+ {
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #521a0b;
@@ -208,12 +209,13 @@ li a:hover {
   color: #f9f0f0;
 }
 
-#who-we-are p {
-  padding-right: 1em;
-  padding-left: 1em;
+#who-we-are p{
+  padding-right: 11em;
+  padding-left: 11em;
 }
 
-#who-we-are h2 {
+#who-we-are h2
+ {
   color: #edce98;
 }
 
@@ -250,7 +252,6 @@ li a:hover {
 #third-question,
 #fourth-question,
 #find-us {
-  flex-direction: column;
   text-align: center;
   width: 100%;
 }
@@ -259,14 +260,15 @@ li a:hover {
 #second-question .question_answer,
 #third-question .question_answer,
 #fourth-question .question_answer {
-  margin: 1em;
+  margin: 1.5em 7em 1.5em 7em;
+  width: 50%;
 }
 
 #first-question .whisky_img,
 #second-question .whisky_img,
 #third-question .whisky_img,
 #fourth-question .whisky_img {
-  width: 100%;
+  float: left;
 }
 
 #find-us .question_answer {
@@ -292,6 +294,10 @@ li a:hover {
 #find-us {
   display: flex;
   justify-content: space-between;
+}
+
+.questions article img {
+  max-width: 25em;
 }
 
 /* Style the form */
