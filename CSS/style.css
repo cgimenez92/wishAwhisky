@@ -74,6 +74,17 @@ div.container {
   margin: 0.5em;
 }
 
+.container .footer,
+.container .header,
+.container .navbar {
+  background: #0e0606;
+  color: #f9f0f0;
+}
+
+.container .footer {
+  grid-area: footer;
+}
+
 /****************NAVBAR********************/
 .navbar {
   list-style-type: none;
@@ -123,7 +134,7 @@ li a:hover {
 }
 /****************NAVBAR********************/
 
-/****************CAROUSEL******************/
+/****************CAROUSEL (ANIMACION)******************/
 .slide {
   grid-area: slide;
   width: 100%;
@@ -184,24 +195,10 @@ li a:hover {
   }
 }
 
-/****************CAROUSEL******************/
-/*
-.container .content
-.container .aside{
-  color: #F9F0F0;
-  padding: 1em;
-  border-radius: 0.5em;
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial;
-}
+/****************CAROUSEL (ANIMACION)******************/
 
-/*.container .aside {
-  margin: 20px;
-  background: #d5aa84;
-  grid-area: aside;
-}*/
-
-#who-we-are
- {
+/****************SECCIONES******************/
+#who-we-are {
   padding-top: 2em;
   padding-bottom: 2em;
   background-color: #521a0b;
@@ -209,13 +206,12 @@ li a:hover {
   color: #f9f0f0;
 }
 
-#who-we-are p{
+#who-we-are p {
   padding-right: 11em;
   padding-left: 11em;
 }
 
-#who-we-are h2
- {
+#who-we-are h2 {
   color: #edce98;
 }
 
@@ -229,23 +225,6 @@ li a:hover {
   font-family: "Love Ya Like A Sister", "Roboto", "Helvetica Neue", Helvetica,
     Arial;
 }
-
-.container .footer {
-  grid-area: footer;
-}
-
-.container .footer,
-.container .header,
-.container .navbar {
-  background: #0e0606;
-  color: #f9f0f0;
-}
-
-/* .questions {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} */
 
 #first-question,
 #second-question,
@@ -299,8 +278,9 @@ li a:hover {
 .questions article img {
   max-width: 25em;
 }
+/****************SECCIONES******************/
 
-/* Style the form */
+/****************FORMULARIO******************/
 #signup {
   margin: 4rem auto;
   padding: 40px;
@@ -308,9 +288,8 @@ li a:hover {
   min-width: 300px;
 }
 
-/* Style the input fields */
 .form-field input {
-  margin: .1rem;
+  margin: 0.1rem;
   padding: 7px;
   width: 100%;
   font-size: 17px;
@@ -326,13 +305,15 @@ input[type="submit"] {
   color: #f9f0f0;
   cursor: pointer;
   float: right;
-} 
+}
 
 .form-field small {
   color: red;
-  margin-left: .5em;
+  margin-left: 0.5em;
 }
+/****************FORMULARIO******************/
 
+/****************FOOTER******************/
 .footer {
   background-color: #0e0606;
   display: flex;
@@ -362,3 +343,4 @@ input[type="submit"] {
 .footer img {
   max-width: 3em;
 }
+/****************FOOTER******************/

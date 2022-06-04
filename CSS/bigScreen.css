@@ -1,24 +1,38 @@
+html {
+  font-size: 1.2em !important;
+}
+
+
 .slide {
-    background-color: #0e0606 !important;
-  }
+  background-color: #0e0606 !important;
+}
 
-  .slide img {
-    width: 60% !important; 
-    height: 95% !important; 
-    margin-top: 2% !important;
-    margin-right: 20% !important;
-    margin-left: 20% !important;
-    border: .1em solid #bf8b67;
-    border-radius: 0.5em;
-  }
+.slide img {
+  width: 60% !important;
+  height: 95% !important;
+  margin-top: 2% !important;
+  margin-right: 20% !important;
+  margin-left: 20% !important;
+  border: 0.1em solid #bf8b67;
+  border-radius: 0.5em;
+}
 
+#who-we-are p {
+  padding-right: 40em !important;
+  padding-left: 40em !important;
+}
 
-  #who-we-are p{
-    padding-right: 40em !important; 
-    padding-left: 40em !important; 
-  }
-  
+#first-question .question_answer,
+#second-question .question_answer,
+#third-question .question_answer,
+#fourth-question .question_answer {
+  margin: 5em 10em 5em 10em !important;
+}
 
-  .questions article img{
-    max-width: 650px !important;
-  }
+#find-us .question_answer {
+  margin: 5em 10em 5em 10em !important;
+}
+
+.questions article img {
+  max-width: 650px !important;
+}

@@ -1,5 +1,5 @@
 /* Hacer un menu hamburguesapara el navbar */
-.container .content  {
+.container .content {
   margin: 0 !important;
 }
 
@@ -23,13 +23,13 @@ li a:active {
 }
 
 .container .content {
-  width: 100%; 
+  width: 100%;
   text-align: center;
 }
 
 #who-we-are p,
 #history p {
-  padding-right: 0!important;
+  padding-right: 0 !important;
   padding-left: 0 !important;
 }
 
@@ -63,7 +63,6 @@ li a:active {
   width: 100% !important;
   max-width: 100% !important;
 }
-
 
 .map-responsive iframe {
   width: 100% !important;
