@@ -2,7 +2,6 @@
 /* @import url("./landscape.css") only screen and (orientation: landscape) and (min-width: 768px);   Verificar en horizontal*/
 @import url("./bigScreen.css") screen and (min-width: 1250px);
 
-
 /* // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) { ... }
 
@@ -18,7 +17,6 @@
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) { ... }
  */
-
 
 * {
   margin: 0;
@@ -98,7 +96,7 @@ div.container {
 
 .navbar ul {
   background-color: #0e0606;
-  border-bottom: .1em solid #dacc96;
+  border-bottom: 0.1em solid #dacc96;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
   display: none;
@@ -116,7 +114,7 @@ div.container {
 
 li a:hover {
   /*color: #000;*/
-  border-bottom: .1em solid #bf8b67;
+  border-bottom: 0.1em solid #bf8b67;
 }
 
 .navbar li:hover > ul {
@@ -205,18 +203,18 @@ li a:hover {
 #who-we-are {
   padding-top: 2em;
   padding-bottom: 2em;
-  background-color: #521A0B;
+  background-color: #521a0b;
   text-align: center;
   color: #f9f0f0;
 }
 
-#who-we-are p{
-  padding-right: 11em;
-  padding-left: 11em;
+#who-we-are p {
+  padding-right: 1em;
+  padding-left: 1em;
 }
 
-#who-we-are h2{
-      color: #EDCE98;
+#who-we-are h2 {
+  color: #edce98;
 }
 
 .container .content {
@@ -251,38 +249,38 @@ li a:hover {
 #second-question,
 #third-question,
 #fourth-question,
-#find-us  {
+#find-us {
+  flex-direction: column;
   text-align: center;
   width: 100%;
 }
 
 #first-question .question_answer,
 #second-question .question_answer,
-#third-question  .question_answer,
-#fourth-question .question_answer{
-  margin: 1.5em 7em 1.5em 7em;
-  width: 50%;
-} 
+#third-question .question_answer,
+#fourth-question .question_answer {
+  margin: 1em;
+}
 
 #first-question .whisky_img,
 #second-question .whisky_img,
-#third-question  .whisky_img,
-#fourth-question .whisky_img{
-  float: left;
-} 
+#third-question .whisky_img,
+#fourth-question .whisky_img {
+  width: 100%;
+}
 
 #find-us .question_answer {
   margin: 2em 3em 2em 3em;
 }
 
 #find-us {
-  background-color: #EDCE98;
+  background-color: #edce98;
   text-align: center;
 }
 
 #third-question,
-#fourth-question{
-  background-color: #521A0B;
+#fourth-question {
+  background-color: #521a0b;
   text-align: center;
   color: #f9f0f0;
 }
@@ -294,15 +292,10 @@ li a:hover {
 #find-us {
   display: flex;
   justify-content: space-between;
-} 
-
-.questions article img {
-  max-width: 25em;
 }
 
-
- /* Style the form */
- #regForm {
+/* Style the form */
+#signup {
   margin: 4rem auto;
   padding: 40px;
   width: 70%;
@@ -310,82 +303,32 @@ li a:hover {
 }
 
 /* Style the input fields */
-input {
-  padding: 10px;
+.form-field input {
+  margin: .1rem;
+  padding: 7px;
   width: 100%;
   font-size: 17px;
-  border: .1em solid #0e0606;
+  border: 0.1em solid #0e0606;
   border-radius: 0.5em;
 }
 
-/* Mark input boxes that gets an error on validation: */
-input.invalid {
-  background-color: #FFE8ED;
-}
-
-/* Hide all steps by default: */
-.tab {
-  display: none;
-}
-
-.tab p{
-  margin: 1em;
-}
-
-.tab h2{
-  text-align:center;
-}
-
-/* Make circles that indicate the steps of the form: */
-.step {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #EDCE98;
-  border: none;
-  border-radius: 50%;
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* Mark the active step: */
-.step.active {
-  opacity: 1;
-}
-
-/* Mark the steps that are finished and valid: */
-.step.finish {
-  background-color: #521A0B;
-} 
-
-button[type=button]{
-  background-color: #521A0B;
-  border-radius: 0.5em;
+input[type="submit"] {
+  margin-top: 0;
+  width: 25%;
+  background-color: #521a0b;
   border: none;
   color: #f9f0f0;
-  padding: 1em 2em;
-  text-decoration: none;
   cursor: pointer;
-}
-
-.slide-buttons{
-  margin: 1em;
-}
-
-.slide-buttons #prevBtn{
-  float: left;
-}
-
-.slide-buttons #nextBtn{
   float: right;
-}
+} 
 
-.slide-step{
-  text-align:center;
-  margin-top: 4em;
+.form-field small {
+  color: red;
+  margin-left: .5em;
 }
 
 .footer {
+  background-color: #0e0606;
   display: flex;
   justify-content: space-between;
 }
@@ -403,7 +346,7 @@ button[type=button]{
 }
 
 .footer .links a:hover {
-  border-bottom: .1em solid #bf8b67;
+  border-bottom: 0.1em solid #bf8b67;
 }
 
 .footer .social a {

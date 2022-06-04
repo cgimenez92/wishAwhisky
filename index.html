@@ -269,47 +269,44 @@
             </div>
           </article>
 
-          <form id="regForm" name="regForm" action="">
+          <form id="signup" class="form">
             <h1>Registrate</h1>
             <!-- One "tab" for each step in the form: -->
-            <div class="tab">
-              <p><input placeholder="Nombre" name="name" oninput="this.className = ''"></p>
-              <p><input placeholder="Apellido" name="lastName" oninput="this.className = ''"></p>
-              <small></small>
-            </div>
-            
-            <div class="tab">
-              <p><input placeholder="E-mail" name="eMail" oninput="this.className = ''"></p>
-              <p><input placeholder="Telefono" name="phoneNumber" oninput="this.className = ''"></p>
-              <small></small>
-            </div>
-            
-            <div class="tab">
-              <h2>Fecha de Nacimiento</h2><br />
-              <p><input placeholder="Formato: dd/mm/yyy" name="dateBirth" oninput="this.className = ''"></p>
-              <small></small>
-            </div>
-            
-            <div class="tab">
-              <p><input placeholder="Usuario" oninput="this.className = ''"></p>
-              <p><input placeholder="Contrasena" oninput="this.className = ''"></p>
-              <small></small>
-            </div>
-            
-            <div class="slide-buttons">
-              <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-              <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+            <div class="form-field">
+              <input type="text" name="name" id="name" placeholder="Nombre" autocomplete="off">
               <small></small>
             </div>
 
-            <!-- Circles which indicates the steps of the form: -->
-            <div class="slide-step">
-              <span class="step"></span>
-              <span class="step"></span>
-              <span class="step"></span>
-              <span class="step"></span>
+            <div class="form-field">
+              <input type="text" name="lastName" id="lastName" placeholder="Apellido" autocomplete="off">
+              <small></small>
             </div>
-            </form> 
+            
+            <div class="form-field">
+              <input type="email" name="email" id="email" placeholder="E-mail" autocomplete="off">
+              <small></small>
+            </div>
+                        
+            <div class="form-field">
+              <input type="date" name="dateBirth" id="dateBirth" placeholder="Formato: dd/mm/yyy" autocomplete="off">
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input type="text" name="username" id="username" placeholder="Usuario" autocomplete="off">
+              <small></small>
+            </div>
+
+            <div class="form-field">
+              <input type="password" name="password" id="password" placeholder="Contraseña" autocomplete="off">
+              <small></small>
+            </div>
+
+            <div class="form-field">` 
+              <input type="submit" value="Enviar">
+            </div>
+            
+            </form>
             <script src="./JS/validateForm.js"></script>
 
         </div>
@@ -321,7 +318,7 @@
           /></a>
           <!-- <a href="#">Acerca de</a>-"./aboutUs.html"
           <a href="#">Contacto</a>"./contact.html" -->
-<!--           <a href="./findUs.html">Donde encontrarnos</a>
+          <!--<a href="./findUs.html">Donde encontrarnos</a>
           <a href="./register.html">Registrese</a> -->
         </section>
 
